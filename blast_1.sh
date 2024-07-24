@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#SBATCH --time=00:15:00       # The duration in HH:MM:SS format of each task in the array
-#SBATCH --cpus-per-task=1     # The number of cores for each task in the array
-#SBATCH --mem-per-cpu=100GB    # The memory per core for each task in the array
+#SBATCH --time=00:15:00       
+#SBATCH --cpus-per-task=1     
+#SBATCH --mem-per-cpu=100GB    
 #SBATCH --output=blast_1.%J.out
 #SBATCH --error=blast_1.%J.err
 
