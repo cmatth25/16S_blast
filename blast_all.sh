@@ -3,8 +3,8 @@
 #SBATCH --time=00:15:00       
 #SBATCH --cpus-per-task=1     
 #SBATCH --mem-per-cpu=100GB    
-#SBATCH --output=blast_1.%J.out
-#SBATCH --error=blast_1.%J.err
+#SBATCH --output=blast_all.%J.out
+#SBATCH --error=blast_all.%J.err
 
 module load StdEnv/2020 gcc/9.3.0 blast+/2.14.0
 
