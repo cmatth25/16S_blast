@@ -12,5 +12,5 @@ module load StdEnv/2020 gcc/9.3.0 blast+/2.14.0
 # Using the index of the current task, given by `$SLURM_ARRAY_TASK_ID`, run the corresponding query and write the result
 for file in `ls ${1}/*.fna`;
 do 
-        blastn -db /cvmfs/bio.data.computecanada.ca/content/databases/Core/blast_dbs/2022_03_23/ITS_eukaryote_sequences -query ${file} -outfmt 0 -num_descriptions 10 -num_alignments 10 -out ${file::-4}_bl.txt;
+        blastn -db /cvmfs/bio.data.computecanada.ca/content/databases/Core/blast_dbs/2022_03_23/ITS_RefSeq_Fungi -query ${file} -outfmt 0 -num_descriptions 10 -num_alignments 10 -out ${file::-4}_bl.txt;
 done
